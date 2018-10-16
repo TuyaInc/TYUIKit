@@ -8,6 +8,8 @@
 
 #import "TYViewController.h"
 
+#import "TPNavigationController.h"
+
 @interface TYViewController ()
 
 @end

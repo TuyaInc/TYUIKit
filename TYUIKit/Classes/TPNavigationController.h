@@ -2,7 +2,7 @@
 //  TPNavigationController.h
 //  TYLibraryExample
 //
-//  Created by 冯晓 on 16/2/18.
+//  Created by Tuya on 16/2/18.
 //  Copyright © 2016年 Tuya. All rights reserved.
 //
 

@@ -2,12 +2,11 @@
 //  TPNavigationController.m
 //  TYLibraryExample
 //
-//  Created by 冯晓 on 16/2/18.
+//  Created by Tuya on 16/2/18.
 //  Copyright © 2016年 Tuya. All rights reserved.
 //
 
 #import "TPNavigationController.h"
-#import "UIViewController+TPCategory.h"
 
 @interface TPNavigationController() <UINavigationControllerDelegate>
 
@@ -24,11 +23,16 @@
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
-    if (self.childViewControllers.count > 0) {
-        viewController.hidesBottomBarWhenPushed = YES;
-    }
+     if (self.childViewControllers.count > 0) {
+         viewController.hidesBottomBarWhenPushed = YES;
+     }
     
     [super pushViewController:viewController animated:animated];
+    
+    // iPhoneX等刘海屏手机，在push和pop的时候，有可能出现tabbar上移的情况
+    CGRect frame = self.tabBarController.tabBar.frame;
+    frame.origin.y = [UIScreen mainScreen].bounds.size.height - frame.size.height;
+    self.tabBarController.tabBar.frame = frame;
 }
 
 - (void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
@@ -50,8 +54,6 @@
         // 不失效的话有问题
         self.interactivePopGestureRecognizer.enabled = NO;
     }
-    
-    
 }
 
 - (void)enablePopGesture {

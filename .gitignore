@@ -34,8 +34,7 @@ Carthage/Build
 # Note: if you ignore the Pods directory, make sure to uncomment
 # `pod install` in .travis.yml
 #
-# Pods/
 Podfile.lock
-Example/Pods
-Example/TYUIKit.xcodeproj/xcshareddata
-Example/TYUIKit.xcworkspace/xcshareddata
+Pods
+xcshareddata
+
