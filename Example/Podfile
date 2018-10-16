@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TYUIKit_Example' do
+  pod 'TYUIKit', :path => '../'
+
+  target 'TYUIKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
