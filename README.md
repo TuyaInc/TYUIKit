@@ -17,12 +17,14 @@ TYUIKit is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
+source 'https://github.com/TuyaInc/TYPublicSpecs.git'
+
 pod 'TYUIKit'
 ```
 
 ## Author
 
-panyfun, zhupan@tuya.com
+TuyaInc, www.tuya.com
 
 ## License
 
