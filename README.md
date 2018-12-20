@@ -25,7 +25,3 @@ pod 'TYUIKit'
 ## Author
 
 TuyaInc, www.tuya.com
-
-## License
-
-TYUIKit is available under the MIT license. See the LICENSE file for more info.
