@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'TYUIKit'
-  s.version          = '0.0.2'
+  s.version          = '0.1.0'
   s.summary          = 'UIKit From Tuya'
   s.homepage         = 'https://github.com/TuyaInc/TYUIKit'
   s.author           = { 'TuyaInc' => 'https://www.tuya.com' }
