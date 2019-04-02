@@ -15,11 +15,8 @@
 #import "UIView+TYCategory.h"
 #import "UIFont+TYCategory.h"
 
-#if __has_include(<TYImpactEngine/TYImpactEngine.h>)
-#import <TYImpactEngine/TYImpactEngine.h>
-#elif __has_include("TYImpactEngine.h")
 #import "TYImpactEngine.h"
-#endif
+#import "TYSegmentedControl.h"
 
 #if __has_include(<TYNavigationController/UIViewController+TYNavigation.h>)
 #import <TYNavigationController/UIViewController+TYNavigation.h>

@@ -19,7 +19,7 @@ extern CGFloat TY_SystemVersion(void);
 extern NSString * TY_SystemName(void);
 
 /**
- TY_SystemName == kTYSystemName_iOS
+ [TY_SystemName isEqualToString:@"iOS"]
  && TY_SystemVersion > version
  */
 extern BOOL TY_IsIOS(CGFloat version);

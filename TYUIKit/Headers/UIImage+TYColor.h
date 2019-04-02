@@ -14,6 +14,11 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIImage *)ty_imageWithColor:(UIColor *)color;
 + (UIImage *)ty_imageWithColor:(UIColor *)color size:(CGSize)size;
 
+/**
+ Available After TuyaSmart 3.9.0+
+ */
++ (UIImage *)ty_imageWithGradient:(CAGradientLayerType)type colors:(NSArray<UIColor *> *)colors locations:(NSArray<NSNumber *> *)locations startPoint:(CGPoint)start endPoint:(CGPoint)end size:(CGSize)size;
+
 @end
 
 NS_ASSUME_NONNULL_END
