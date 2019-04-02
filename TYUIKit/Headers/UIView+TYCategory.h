@@ -9,7 +9,6 @@
 #define UIView_TYCategory_h
 
 #import "UIView+TYFrame.h"
-#import "UIView+TYAlignment.h"
 #import "UIView+TYHitExtend.h"
 #import "UIView+TYSubview.h"
 

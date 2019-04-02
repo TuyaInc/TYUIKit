@@ -11,10 +11,11 @@
 
 /**
  A wrapper of UIImpactFeedbackGenerator.
+ working with iOS10+
 
  @param style UIImpactFeedbackStyle
  */
-+ (void)impactWithStyle:(UIImpactFeedbackStyle)style NS_AVAILABLE_IOS(10_0);
++ (void)impactWithStyle:(UIImpactFeedbackStyle)style;
 
 @end
 
