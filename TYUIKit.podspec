@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/TuyaInc/TYUIKit'
   s.author           = { 'TuyaInc' => 'www.tuya.com' }
-  s.source           = { :git => 'https://github.com/TuyaInc/TYUIKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/TuyaInc/TYUIKit.git', :commit => '0cd00fc9aa6f927cb2b4138b85fa69c0e5c5555f' }
 
   s.ios.deployment_target = '8.0'
 
