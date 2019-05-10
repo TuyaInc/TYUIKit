@@ -37,6 +37,15 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *cancelButtonHighlightColor;
 @property (nonatomic, strong) UIColor *cancelButtonDisableColor;
 
+/**
+ AccessibilityIdentifier of search bar, default is @"search"
+ */
+@property (nonatomic, strong) NSString *searchAccessibilityIdentifier;
+/**
+ AccessibilityIdentifier of search cancel button, default is @"search_cancel"
+ */
+@property (nonatomic, strong) NSString *cancelAccessibilityIdentifier;
+
 + (instancetype)appearance;
 
 @end

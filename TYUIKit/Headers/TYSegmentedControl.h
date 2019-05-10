@@ -44,6 +44,12 @@ extern TYSegmentLength const TYSegmentLengthDynamic;
 
 #pragma mark - TYSegmentedControl
 
+
+/**
+ lineView will animate with contentScrollView's scroll
+ if you want to animate lineView, set the paging container scrollview to contentScrollView
+ Default: nil
+ */
 @property (nonatomic, strong, nullable) UIScrollView *contentScrollView;
 
 /** Default is 0 index */
@@ -63,40 +69,96 @@ extern TYSegmentLength const TYSegmentLengthDynamic;
 
 @property (nonatomic, weak) id<TYSegmentControlDelegate> delegate;
 
+/**
+ current selected index
+ */
 @property (nonatomic, assign, readonly) NSInteger        selectedIndex;
 
+/** collection view */
 @property (nonatomic, strong, readonly) UICollectionView *collectionView;
-
 
 #pragma mark - item properties
 
+/**
+ the width to increment the item. for example:if itemWidthIncrement = 10, item.width = title.size.width + 10
+ Default: 10.f
+ */
 @property (nonatomic, assign) CGFloat itemWidthIncrement;
 
+/**
+ item's spacing
+ Default: 20.f
+ */
 @property (nonatomic, assign) CGFloat itemSpacing;
 
+/**
+ should average every item if content.width < self.width
+ Default: NO
+ */
 @property (nonatomic, assign) BOOL    averageCellSpacingEnabled;
 
+/**
+ backgroud color should change animate with scroll
+ Default: YES
+ */
 @property (nonatomic, assign) BOOL    itemWidthZoomScrollGradientEnabled;
 
+/**
+ should animate when select item
+ Default: YES
+ */
 @property (nonatomic, assign) BOOL    selectedAnimationEnabled;
 
-
+/**
+ item'width if itemWidth is TYSegmentLengthDynamic, itemWidth is the title's size
+ Default: TYSegmentLengthDynamic
+ */
 @property (nonatomic, assign) TYSegmentLength itemWidth;
 
+/**
+ the animation time when select item
+ Default: 0.25s
+ */
 @property (nonatomic, assign) NSTimeInterval  selectedAnimationDuration;
 
 #pragma mark - indicator properties
 
+/**
+ item vertical offset, negative number direction is up, positive number direction is down
+ Default: 0.f
+ */
 @property (nonatomic, assign) CGFloat         indicatorVerticalOffset;
 
+
+/**
+ indicator line view's color
+ Default: UIColor.black
+ */
 @property (nonatomic, strong) UIColor         *indicatorColor;
 
+/**
+ indicator line view's width
+ Default: TYSegmentLengthDynamic
+ */
 @property (nonatomic, assign) TYSegmentLength indicatorWidth;
 
+
+/**
+ indicator line view's height
+ Default: 3.f
+ */
 @property (nonatomic, assign) TYSegmentLength indicatorLineViewHeight;
 
+/**
+ indicator line view's style
+ Default: TYSegmentIndicatorStyleLine
+ */
 @property (nonatomic, assign) TYSegmentIndicatorStyle    indicatorStyle;
 
+/**
+ indicator line view's position
+ Default: TYSegmentIndicatorPositionBottom
+ */
 @property (nonatomic, assign) TYSegmentIndicatorPosition indicatorPosition;
 
 
@@ -140,6 +202,11 @@ extern TYSegmentLength const TYSegmentLengthDynamic;
 
 @property (nonatomic, assign) BOOL    cellBackgroundColorGradientEnabled;
 
+- (void)showRedPointAtIndexs:(NSArray<NSNumber *> *)indexs;
+
+- (void)showRedPointAtIndex:(NSInteger)index;
+
+- (void)hideRedPointAtIndex:(NSInteger)index;
 
 /**
  Select at index

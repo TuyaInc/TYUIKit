@@ -59,11 +59,20 @@ NS_ASSUME_NONNULL_BEGIN
  Available After TuyaSmart 3.9.0+
  */
 @interface TYSearchController : UIViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, TYSearchBarDelegate>
+
+/**
+ disable searchTableClass config in TYSearchControllerAppearance
+ default is NO
+ */
+@property (nonatomic) BOOL disableApperanceTableClass;
+
 /**
  table use to display normal data
  tableView.delegate = self, tableView.dataSource = self
  */
 @property (nonatomic, strong, readonly) UITableView *tableView;
+@property (nonatomic) UITableViewStyle tableStyle;
+
 /**
  searbar will add to table header view
  searbar.delegate = self

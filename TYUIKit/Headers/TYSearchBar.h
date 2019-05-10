@@ -31,7 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  cancel button will not create until it show, so getter method may return nil
- you can use delegate method -ty_searchBarCancelButtonInitial to capture
+ you can use delegate method -ty_searchBarCancelButtonInitial to capture it
  */
 @property (nonatomic, weak, readonly)  UIButton * _Nullable ty_cancelButton;
 @property (nonatomic) UIEdgeInsets ty_cancelButtonInsets;
