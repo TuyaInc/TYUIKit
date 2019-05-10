@@ -14,6 +14,7 @@
 #import "UIScreen+TYCategory.h"
 #import "UIView+TYCategory.h"
 #import "UIFont+TYCategory.h"
+#import "UILabel+TYCategory.h"
 
 #import "TYImpactEngine.h"
 #import "TYSegmentedControl.h"

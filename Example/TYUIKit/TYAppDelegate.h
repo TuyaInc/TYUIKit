@@ -2,7 +2,7 @@
 //  TYAppDelegate.h
 //  TYUIKit
 //
-//  Created by panyfun on 10/16/2018.
+//  Created by TuyaInc on 10/16/2018.
 //  Copyright (c) 2018 panyfun. All rights reserved.
 //
 
