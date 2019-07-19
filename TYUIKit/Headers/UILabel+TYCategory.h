@@ -8,6 +8,6 @@
 #ifndef UILabel_TYCategory_h
 #define UILabel_TYCategory_h
 
-#import "UILabel+TYParagraph.h"
+#import "UILabel+TYFactory.h"
 
 #endif /* UILabel_TYCategory_h */

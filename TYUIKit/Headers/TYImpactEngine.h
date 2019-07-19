@@ -7,15 +7,21 @@
 
 #import <Foundation/Foundation.h>
 
+typedef enum : NSInteger {
+    TYImpactStyleLight = UIImpactFeedbackStyleLight,
+    TYImpactStyleMedium = UIImpactFeedbackStyleMedium,
+    TYImpactStyleHeavy = UIImpactFeedbackStyleHeavy,
+    
+    TYImpactStyleSelection,
+    
+    TYImpactStyleNotificationSucc,
+    TYImpactStyleNotificationFail,
+    TYImpactStyleNotificationError,
+} TYImpactStyle;
+
 @interface TYImpactEngine : NSObject
 
-/**
- A wrapper of UIImpactFeedbackGenerator.
- working with iOS10+
-
- @param style UIImpactFeedbackStyle
- */
-+ (void)impactWithStyle:(UIImpactFeedbackStyle)style;
++ (void)impactWithStyle:(TYImpactStyle)style NS_AVAILABLE_IOS(10_0);
 
 @end
 

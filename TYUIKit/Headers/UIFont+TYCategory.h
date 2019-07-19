@@ -8,6 +8,6 @@
 #ifndef UIFont_TYCategory_h
 #define UIFont_TYCategory_h
 
-#import "UIFont+TYPingFangSC.h"
+//#import "UIFont+TYPingFangSC.h"
 
 #endif /* UIFont_TYCategory_h */

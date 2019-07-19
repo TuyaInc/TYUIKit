@@ -8,6 +8,7 @@
 #ifndef UIImage_TYCategory_h
 #define UIImage_TYCategory_h
 
+#import "UIImage+TYQRCode.h"
 #import "UIImage+TYColor.h"
 #import "UIImage+TYLayer.h"
 #import "UIImage+TYTrim.h"

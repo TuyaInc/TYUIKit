@@ -16,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
  UISearchBar height is 44 in iOS 10 less, but 56 in iOS11.0+
  */
 @property (nonatomic, strong) UIColor *backgroundColor;
-@property (nonatomic, strong) UIColor *seperatorColor;
-@property (nonatomic) CGFloat seperatorHeight;
+@property (nonatomic, strong) UIColor *separatorColor;
+@property (nonatomic) CGFloat separatorHeight;
 @property (nonatomic) BOOL translucent;
 
 @property (nonatomic, strong) UIColor *tintColor;

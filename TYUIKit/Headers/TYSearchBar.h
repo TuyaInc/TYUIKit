@@ -7,6 +7,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "TYSearchBarAppearance.h"
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol TYSearchBarDelegate <UISearchBarDelegate>
@@ -36,7 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak, readonly)  UIButton * _Nullable ty_cancelButton;
 @property (nonatomic) UIEdgeInsets ty_cancelButtonInsets;
 
-@property (nonatomic, strong) UIColor * _Nullable ty_seperatorColor;
+@property (nonatomic, strong) UIColor * _Nullable ty_seperatorColor __deprecated_msg("Use ty_separatorColor instead");
+@property (nonatomic, strong) UIColor * _Nullable ty_separatorColor;
 
 @end
 
