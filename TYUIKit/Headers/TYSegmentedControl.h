@@ -32,7 +32,7 @@ typedef enum : NSUInteger {
 
 typedef CGFloat TYSegmentLength;
 
-extern TYSegmentLength const TYSegmentLengthDynamic;
+UIKIT_EXTERN TYSegmentLength const TYSegmentLengthDynamic;
 
 @protocol TYSegmentControlDelegate <NSObject>
 
@@ -199,6 +199,8 @@ extern TYSegmentLength const TYSegmentLengthDynamic;
 @property (nonatomic, strong) UIColor *cellBackgroundSelectedColor;
 
 @property (nonatomic, strong) UIColor *cellBackgroundUnselectedColor;
+
+@property (nonatomic, assign) CGFloat cellLayerRadius;
 
 @property (nonatomic, assign) BOOL    cellBackgroundColorGradientEnabled;
 

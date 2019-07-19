@@ -11,12 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIFont (TYPingFangSC)
 
-+ (UIFont *)ty_pingFangSCRegular:(CGFloat)size;
-+ (UIFont *)ty_pingFangSCSemibold:(CGFloat)size;
-+ (UIFont *)ty_pingFangSCThin:(CGFloat)size;
-+ (UIFont *)ty_pingFangSCLight:(CGFloat)size;
-+ (UIFont *)ty_pingFangSCMedium:(CGFloat)size;
-+ (UIFont *)ty_pingFangSCUltralight:(CGFloat)size;
++ (UIFont *)ty_pingFangSCRegular:(CGFloat)size __deprecated_msg("Use SystemFont instead");
++ (UIFont *)ty_pingFangSCSemibold:(CGFloat)size __deprecated_msg("Use SystemFont instead");
++ (UIFont *)ty_pingFangSCThin:(CGFloat)size __deprecated_msg("Use SystemFont instead");
++ (UIFont *)ty_pingFangSCLight:(CGFloat)size __deprecated_msg("Use SystemFont instead");
++ (UIFont *)ty_pingFangSCMedium:(CGFloat)size __deprecated_msg("Use SystemFont instead");
++ (UIFont *)ty_pingFangSCUltralight:(CGFloat)size __deprecated_msg("Use SystemFont instead");
 
 @end
 

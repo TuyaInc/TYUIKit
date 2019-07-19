@@ -10,22 +10,27 @@
 @interface UIImage (TYTrim)
 
 #pragma mark - Resize
-- (UIImage *)ty_imageWithScaling:(CGFloat)scaling;
-- (UIImage *)ty_imageWithResize:(CGSize)size;
-- (UIImage *)ty_imageWithResize:(CGSize)size contentMode:(UIViewContentMode)contentMode;
+- (UIImage *)ty_imageApplyingScale:(CGFloat)scale;
+- (UIImage *)ty_imageApplyingSize:(CGSize)newSize;
+- (UIImage *)ty_imageApplyingSize:(CGSize)newSize withCntentMode:(UIViewContentMode)contentMode;
 
 #pragma mark - Crop
-- (UIImage *)ty_imageWithCropRect:(CGRect)rect;
+- (UIImage *)ty_imageApplyingCropRect:(CGRect)rect;
 
 #pragma mark - Corner/Border
-- (UIImage *)ty_imageWithCornerRadius:(CGFloat)radius;
-- (UIImage *)ty_imageWithCornerRadius:(CGFloat)radius borderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor;
-
-#pragma mark - TintColor
-- (UIImage *)ty_imageWithTintColor:(UIColor *)color;
+- (UIImage *)ty_imageApplyingCornerRadius:(CGFloat)radius;
+- (UIImage *)ty_imageApplyingCornerRadius:(CGFloat)radius withBorderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor;
 
 #pragma mark - Rotation
-- (UIImage *)ty_imageWithHorizontalFlip;
-- (UIImage *)ty_imageWithVerticalFlip;
+- (UIImage *)ty_imageApplyingHorizontalFlip;
+- (UIImage *)ty_imageApplyingVerticalFlip;
+
+#pragma mark - TintColor
+- (UIImage *)ty_imageApplyingTintColor:(UIColor *)color;
+
+#pragma mark - Alpha
+- (UIImage *)ty_imageApplyingAlpha:(CGFloat)alpha;
+
+
 
 @end

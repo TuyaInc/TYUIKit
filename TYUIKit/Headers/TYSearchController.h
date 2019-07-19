@@ -30,6 +30,8 @@
 
 #import "TYSearchBar.h"
 
+#import "TYSearchControllerAppearance.h"
+
 @class TYSearchController;
 
 typedef enum : NSUInteger {

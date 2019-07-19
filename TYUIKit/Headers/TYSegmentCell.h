@@ -88,6 +88,8 @@ typedef NS_ENUM(NSUInteger, TYSegmentItemSelectType) {
 
 @property (nonatomic, strong) UIColor *cellBackgroundSelectedColor;
 
+@property (nonatomic, assign) CGFloat cellLayerRadius;
+
 @end
 
 
