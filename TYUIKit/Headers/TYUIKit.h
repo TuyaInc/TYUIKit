@@ -4,6 +4,7 @@
 //
 //  Created by TuyaInc on 2018/12/20.
 //
+//  [DOC_IGNORE_FILE]
 
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
@@ -30,6 +31,9 @@
 
 #import "TYUIKitMacro.h"
 
+#import "UINavigationController+TYCategory.h"
+#import "UIViewController+TYCategory.h"
+
 #import "UIDevice+TYCategory.h"
 #import "UIButton+TYCategory.h"
 #import "UIScreen+TYCategory.h"
@@ -39,6 +43,7 @@
 #import "UIView+TYCategory.h"
 #import "UIFont+TYCategory.h"
 
+#import "TYMenuListViewController.h"
 #import "TYSearchController.h"
 #import "TYSegmentedControl.h"
 #import "TYHierarchyManager.h"
@@ -55,6 +60,12 @@
 #elif __has_include("UIViewController+TYNavigation.h")
 #import "UIViewController+TYNavigation.h"
 #import "TYNavigationController.h"
+#endif
+
+#if __has_include(<TYAnimationKit/UIView+TYAnimation.h>)
+#import <TYAnimationKit/UIView+TYAnimation.h>
+#elif __has_include("UIView+TYAnimation.h")
+#import "UIView+TYAnimation.h"
 #endif
 
 #endif /* TYUIKit_h */

@@ -11,17 +11,16 @@
 UIKIT_EXTERN NSString *const kTYSystemName_iOS;
 
 /**
- [[[UIDevice currentDevice] systemVersion] floatValue]
+ @return [[[UIDevice currentDevice] systemVersion] floatValue]
  */
 UIKIT_EXTERN CGFloat TY_SystemVersion(void);
 /**
- [[UIDevice currentDevice] systemName]
+ @return [[UIDevice currentDevice] systemName]
  */
 UIKIT_EXTERN NSString * TY_SystemName(void);
 
 /**
- [TY_SystemName isEqualToString:@"iOS"]
- && TY_SystemVersion >= version
+ @return [TY_SystemName isEqualToString:@"iOS"] && TY_SystemVersion >= version
  */
 UIKIT_EXTERN BOOL TY_IsIOS(CGFloat version);
 

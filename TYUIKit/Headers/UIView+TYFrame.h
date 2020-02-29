@@ -9,7 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+UIKIT_EXTERN CGFloat TY_PixelAlignedLength(CGFloat length);
+UIKIT_EXTERN CGPoint TY_PixelAlignedPoint(CGPoint point);
+UIKIT_EXTERN CGSize TY_PixelAlignedSize(CGSize size);
+UIKIT_EXTERN CGRect TY_PixelAlignedRect(CGRect rect);
+
 @interface UIView (TYFrame)
+
 /**
  * Shortcut for frame.origin.x.
  *

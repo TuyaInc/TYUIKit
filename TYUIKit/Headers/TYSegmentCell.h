@@ -18,6 +18,14 @@ typedef NS_ENUM(NSUInteger, TYSegmentItemSelectType) {
 
 @property (nonatomic, assign) BOOL showRedPoint;
 
+@property (nonatomic, strong) NSString *imageName;
+
+@property (nonatomic, strong) NSURL *imageUrl;
+
+@property (nonatomic, assign) CGSize imageSize;
+
+@property (nonatomic, assign) CGFloat titleImageSpacing;
+
 @property (nonatomic, assign) NSUInteger index;
 
 @property (nonatomic, assign) BOOL selected;
@@ -99,9 +107,11 @@ typedef NS_ENUM(NSUInteger, TYSegmentItemSelectType) {
 - (void)reloadData:(TYSegmentCellModel *)cellModel;
 
 
-@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UILabel     *titleLabel;
 
-@property (nonatomic, strong) UILabel *maskTitleLabel;
+@property (nonatomic, strong) UILabel     *maskTitleLabel;
+
+@property (nonatomic, strong) UIImageView *imageView;
 
 @end
 
