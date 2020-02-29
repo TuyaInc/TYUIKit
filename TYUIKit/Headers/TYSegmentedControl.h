@@ -9,6 +9,12 @@
 @class TYSegmentedControl;
 
 typedef enum : NSUInteger {
+    TYSegmentTypeOnlyTitle,
+    TYSegmentTypeOnlyImage,
+    TYSegmentTypeTitleImage,
+} TYSegmentType;
+
+typedef enum : NSUInteger {
     TYSegmentIndicatorStyleLine,
     TYSegmentIndicatorStyleNone
 } TYSegmentIndicatorStyle;
@@ -34,6 +40,8 @@ typedef CGFloat TYSegmentLength;
 
 UIKIT_EXTERN TYSegmentLength const TYSegmentLengthDynamic;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol TYSegmentControlDelegate <NSObject>
 
 - (void)segmentedControl:(TYSegmentedControl *)segmentControl didSelectAtIndex:(NSInteger)index;
@@ -51,6 +59,9 @@ UIKIT_EXTERN TYSegmentLength const TYSegmentLengthDynamic;
  Default: nil
  */
 @property (nonatomic, strong, nullable) UIScrollView *contentScrollView;
+
+/** Default is TYSegmentTypeTitle */
+@property (nonatomic, assign) TYSegmentType segmentType;
 
 /** Default is 0 index */
 @property (nonatomic, assign) NSInteger    defaultSelectedIndex;
@@ -161,6 +172,32 @@ UIKIT_EXTERN TYSegmentLength const TYSegmentLengthDynamic;
  */
 @property (nonatomic, assign) TYSegmentIndicatorPosition indicatorPosition;
 
+#pragma mark - image properties
+
+/** image's name in app bunlde */
+@property (nonatomic, strong) NSArray <NSString *> *imageNames;
+
+/** image's url from network */
+@property (nonatomic, strong) NSArray <NSURL *> *imageUrls;
+
+/** space between image and title */
+@property (nonatomic, assign) CGFloat imageTitleSpacing;
+
+/**
+ default is UIImageRenderingModeAlwaysTemplate
+ */
+@property (nonatomic, assign) UIImageRenderingMode imageRenderMode;
+
+/**
+ segment don't load image,
+ please load image with the url with yourself
+ */
+@property (nonatomic, strong) void(^imageLoadBlock)(NSURL *imageUrl);
+
+/** image's size */
+@property (nonatomic, assign) CGSize imageSize;
+
+
 
 #pragma mark - title properties
 
@@ -235,5 +272,7 @@ UIKIT_EXTERN TYSegmentLength const TYSegmentLengthDynamic;
 - (void)selectCellAtIndex:(NSInteger)index selectedType:(TYSegmentItemSelectType)TYSegmentItemSelectTypeScroll;
 
 @end
+
+NS_ASSUME_NONNULL_END
 
 

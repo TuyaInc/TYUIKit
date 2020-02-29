@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) UIEdgeInsets searchBarBoundsInsets;
 
 @property (nonatomic, strong) Class<TYSearchTableCustomProtocol> searchTableClass;
+@property (nonatomic, strong) UIColor *searchTableBackgroundColor;
 
 + (instancetype)appearance;
 

@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray<UIButton *> *actionArr;
 
 #pragma mark - Style
-@property (nonatomic) CGPoint centerLocation;  /**< x,y ∈ [0, 1]  default:(0.5, 0.444) */
+@property (nonatomic) CGPoint centerLocation;  ///< x,y ∈ [0, 1]  default:(0.5, 0.444) 
 
 @property (nonatomic) CGSize imageViewSize;
 @property (nonatomic, strong) UIColor *titleColor;

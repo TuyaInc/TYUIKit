@@ -42,15 +42,27 @@ UIKIT_EXTERN CGFloat TY_ScreenSafeTop(void);
 UIKIT_EXTERN CGFloat TY_ScreenSafeBottom(void);
 
 #pragma mark - NaviBarHeight / StatusBarHeight / TabBarHeight
+
+/**
+ [^zh]
+ 如果需要获取控制器顶部的安全高度，建议使用 vc.ty_safeTop 实时获取
+ [$zh]
+ [^en]
+ if you want to get the top of the view controller safe area insets, vc.ty_safeTop will be better
+ [$en]
+ @return [^zh]固定返回 屏幕顶部安全高度+44[^zh] [^en]top of window safe area insets plus 44[$en]
+ */
 UIKIT_EXTERN CGFloat TY_NaviBarHeight(void);
 UIKIT_EXTERN CGFloat TY_StatusBarHeight(void);
 UIKIT_EXTERN CGFloat TY_TabBarHeight(void);
 
 #pragma mark - ScreenAdaption
-/**
- adapt to 375.0
- */
+
+/// [^zh]适配屏幕，标准375.0[$zh] [^en]adaption to screen, standard is 375.0[$en]
 UIKIT_EXTERN CGFloat TY_ScreenAdaptionLength(CGFloat length);
+/// [^zh]适配屏幕，标准375.0[$zh] [^en]adaption to screen, standard is 375.0[$en]
 UIKIT_EXTERN CGPoint TY_ScreenAdaptionPoint(CGPoint point);
+/// [^zh]适配屏幕，标准375.0[$zh] [^en]adaption to screen, standard is 375.0[$en]
 UIKIT_EXTERN CGSize TY_ScreenAdaptionSize(CGSize size);
+/// [^zh]适配屏幕，标准375.0[$zh] [^en]adaption to screen, standard is 375.0[$en]
 UIKIT_EXTERN CGRect TY_ScreenAdaptionRect(CGRect rect);

@@ -4,6 +4,7 @@
 //
 //  Created by TuyaInc on 2018/12/20.
 //
+//  [DOC_IGNORE_FILE]
 
 #ifndef UIScreen_TYCategory_h
 #define UIScreen_TYCategory_h
