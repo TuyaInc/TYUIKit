@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'TYUIKit'
 
-  s.version          = '1.1.0'
+  s.version          = '1.1.1'
 
   s.summary          = 'UI Kit Powered By TuyaInc'
   s.homepage         = 'https://github.com/TuyaInc/TYUIKit'
@@ -15,5 +15,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'TYUIKit/Headers/**/*'
   s.vendored_library = 'TYUIKit/libTYUIKit.a'
+
+  s.dependency 'Masonry'
 
 end
